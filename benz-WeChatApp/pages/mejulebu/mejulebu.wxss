@@ -1,0 +1,57 @@
+/* pages/mejulebu/mejulebu.wxss */
+.myhead{
+  height:130rpx;
+  background: #000;
+}
+.myhead image{
+  position: relative;
+  left: 50px;
+  width:70%;
+  height:120rpx;
+}
+.mytext{
+  background: #000;
+  color:#fff;
+  padding: 18px;
+  text-align: center;
+}
+.slider{
+  height:450rpx;
+  width:100%;
+}
+.slider swiper{
+  height:450rpx;
+  width:100%;
+}
+.slider image{
+  height:450rpx;
+  width:100%;
+}
+/*彩色图片*/
+.index-body{
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-body .nav-item2{
+  width: 66.666%;
+  height: 230rpx;
+}
+.index-body .nav-item2 image{
+  width: 100%;
+  height: 230rpx;
+}
+.index-body .nav-item3{
+  width: 33.333%;
+  height: 230rpx;
+}
+.index-body .nav-item3 image{
+  width: 100%;
+  height: 230rpx;
+}
+.myfooter{
+  background: #000;
+  color:#B9B9B9;
+  padding: 15px;
+  text-align: center;
+  font-size: 13px;
+}

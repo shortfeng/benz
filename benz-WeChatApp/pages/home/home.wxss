@@ -1,0 +1,61 @@
+/* pages/home/home.wxss */
+.slider{
+  height:450rpx;
+  width:100%;
+}
+.slider swiper{
+  height:450rpx;
+  width:100%;
+}
+.slider image{
+  height:450rpx;
+  width:100%;
+}
+/*九宫格*/
+.index-nav{
+  display: flex;
+  flex-wrap:wrap;
+}
+.index-nav .nav-item{
+  height:200rpx;
+  width:25%;
+  box-sizing: border-box;
+  /* border:1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-right:1rpx solid #ccc;
+  border-bottom:1rpx solid #ccc;
+  background: #000;
+}
+.index-nav .nav-item:nth-child(4){
+  border-right:0px none;
+}
+.index-nav image{
+  width:162rpx;
+  height:162rpx;
+  margin-bottom: 5rpx;
+}
+.divider{
+  height:20rpx;
+  background-color:#000;
+}
+.myhead{
+  height:130rpx;
+  background: #000;
+}
+.myhead image{
+  position: relative;
+  left: 50px;
+  width:70%;
+  height:120rpx;
+}
+.mytext{
+  background: #000;
+  color:#fff;
+  padding: 15px;
+  text-align: center;
+}
+
