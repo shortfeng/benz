@@ -1,0 +1,440 @@
+html{
+    overflow-x:hidden ;
+    overflow-y: auto;
+}
+.lunbo img{
+    width: 100%;
+}
+.lun-text{
+    width: 100%;
+}
+.lun-text2{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    color: white;
+}
+.lun-text2 div{
+    width: 100%;
+    text-align: center;
+
+}
+.lun-text2 h6{
+    margin-bottom: 20px;
+}
+.lun-text2 a{
+    text-decoration: none;
+    color: white;
+    background: #0AA1ED;
+    padding:5px 15px;
+    width: 100px;
+    height: 50px;
+}
+.mycontainer{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.mycontainer h2{
+    text-align: center;
+    margin: 30px 0px;
+}
+.mycontainer p{
+    position: relative;
+}
+.all-car{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.all-car ul{
+ padding: 0px;
+}
+.all-car li{
+    border-right: 2px solid white;
+    float: left;
+    width: 25%;
+    max-height: 800px;
+    height: 100%;
+    overflow: auto;
+    cursor: pointer;
+    transition: 1s;
+}
+.all-car li div{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.all-car ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.all-car li:hover{
+    position: relative;
+    top: -5px;
+    background: black;
+    color: white;
+    opacity: 0.3;
+
+}
+.all-car img{
+    width: 100%;
+    vertical-align: top;
+}
+.find-more{
+    display:none ;
+    float: left;
+}
+
+.all-car h4{
+    margin-left: 50px;
+    position: relative;
+    top:180px;
+    color: white;
+    transition: 0.5s;
+}
+.all-car2{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 10px;
+    float: left;
+    font-family:'Playfair Display', serif;
+}
+.all-car2 img{
+    width: 100%;
+    vertical-align: top;
+}
+.all-car2 ul{
+    position: absolute;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.all-car2 li{
+    width: 100%;
+    max-height: 800px;
+    height: 100%;
+    overflow: auto;
+    cursor: pointer;
+    transition: .7s;
+}
+.all-car2-li2{
+    margin-top:80px ;
+    margin-left: 100px;
+    background-color: rgba(999,999,999,0.8);
+    width: 300px !important;
+    height: 200px !important;
+}
+.all-car2-li2 div{
+    color: black !important;
+}
+.fenge{
+    margin-top: 50px;
+}
+
+.all-car2 li:hover{
+    position: relative;
+    background-color:rgba(0,0,0,0.3);
+    color:white !important;
+}
+.all-car2 li:hover div:first-child{
+    top:30%
+}
+.all-car2 li div{
+    margin-left: 50px;
+    color: white;
+    position: absolute;
+    top:40%;
+    font-size: 30px;
+}
+.all-car2 li:hover .find-more{
+    display: block;
+}
+.find-more{
+
+    font-size: 15px !important;
+}
+.find-more div{
+    font-size: 15px !important;
+    width:250px;
+}
+
+
+.footer ul{
+    float: left;
+    list-style: none;
+    width: 25%;
+    margin-top: 30px;
+}
+.footer2 ul{
+    float: left;
+    list-style: none;
+    width: 20%;
+    margin-top: 30px;
+}
+.footer3 ul{
+    float: left;
+    list-style: none;
+    padding:20px;
+}
+.footer3 img{
+    width: 50%;
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+.footer3 a:hover img{
+    filter: grayscale(0%);
+}
+
+.mycontainer-foot a{
+    display: block;
+    margin-top: 20px;
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+}
+.mycontainer-foot a:hover{
+    color: #007bff;
+}
+.mycontainer-foot{
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: #ececf6;
+}
+
+.all-car2-div div{
+    margin-top: 50px;
+    line-height: 140px;
+    width: 280px;
+    height: 180px;
+    background: rgba(999,999,999,0.8);
+}
+.all-car2-div>div{
+    padding: 20px;
+}
+.all-car2-div>div>h6{
+    color: rgb(142,142,142);
+}
+.all-car2-div>div>a{
+    color: black;
+}
+.all-car2-div>div>a:hover{
+    text-decoration: none;
+    color: #00aeef;
+}
+
+.all-car2 .all-car2-div{
+
+    position: absolute;
+    padding: 0;
+    top: 0px;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+}
+footer{
+    width: 100%;
+    background: #040505;
+    float: left;
+    height: auto;
+    line-height: 50px;
+}
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+footer li{
+    display: inline;
+    margin:0px 20px;
+    font-size: 10px;
+    color: #CCCCCC;
+}
+
+/*.drop-down:active .drop-down-content{*/
+    /*position: absolute;*/
+    /*display: block;*/
+/*}*/
+.top-nav-pase{
+    height: 600px;
+}
+.listshow{
+    position: absolute !important;
+    display: block !important;
+}
+.drop-down-content{
+    padding: 0;
+    display: none;
+    width: 100%;
+    position: relative;
+    top: 115px;
+    right:0;
+    z-index: 2;
+    top:90px;
+}
+.drop-down-content .drop-down-content2{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 50px;
+    color: black;
+    background-color: white;
+}
+.footer2{
+    margin: auto;
+    padding: auto;
+    overflow: auto;
+}
+.drop-list{
+    width: 100%;
+    margin: 0;
+}
+.my-li{
+    width: 14%;
+}
+.my-li2{
+    width: 16%;
+}
+.homo-logo{
+    width: 250px;
+    margin-left: 80px;
+}
+.lun-text4{
+    display: none;
+}
+.lun-text5{
+    display: none;
+    margin: 40px 0px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    color: black !important;
+}
+.footer-ul3>ul{
+    padding: 0!important;
+}
+.foot-li2>li>a{
+    cursor: pointer;
+    color: black !important;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.my-foot-span{
+    color: black;
+}
+.foot-li2{
+    display: none;
+}
+.foot-div{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+@media screen and (min-width: 1121px){
+    .footer-ul{
+        display: block;
+    }
+    .footer-ul2{
+        display: none;
+    }
+    .footer-ul3{
+        display: none;
+    }
+}
+@media screen  and (max-width: 1120px){
+    .home-li{
+        width: 32.4% !important;
+    }
+    .home-li2{
+        width: 65.5% !important;
+    }
+    .footer-ul{
+        display: none;
+    }
+    .footer-ul2{
+        display: block;
+    }
+    .footer-ul3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    #listshow{
+        display: none !important;
+    }
+    .top-nav-pase{
+        height: 0px !important;
+    }
+    .foot-li2{
+        display: block;
+    }
+    .foot-li1{
+        display: none;
+    }
+    .listshow{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .homo-logo{
+        width: 220px;
+        margin-left: 30px;
+    }
+    .all-car li{
+        width: 100%;
+        height: 25%;
+        border-bottom:2px solid white ;
+    }
+    .lun-text2{
+        display: none;
+    }
+    .lun-text3{
+        display: none;
+    }
+    .lun-text4{
+        display: block;
+    }
+    .lun-text5{
+        display: block;
+    }
+    .carousel-indicators{
+        position: absolute;
+        top: 200px;
+    }
+    .home-li{
+        width: 100% !important;
+    }
+    .home-li2{
+        width: 100% !important;
+    }
+    .home-li3{
+        width: 100% !important;
+    }
+    .footer-ul2{
+        display: none;
+    }
+    .footer-ul3{
+        display: block;
+        margin: 0;
+    }
+}
+
+

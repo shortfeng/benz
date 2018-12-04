@@ -1,0 +1,329 @@
+.AMG-drive,.amg-racing{
+	position: relative;
+	overflow: hidden;
+	width:100%;
+	text-align: center;
+     /* font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", SimHei, Helvetica, Arial, serif; */
+	
+}
+
+.section-header10-top{
+	margin-top: 2% !important;
+}
+.section-header11,.section-header10{
+	margin: 0 auto;
+	max-width: 940px;
+	padding:30px 0;
+	text-align: center;
+}
+span.head-before{
+	font:36px/50px SimSun,serif;
+	z-index: 2;
+	width: auto;
+	position: relative;
+	transform: scaleX(0.7);
+}
+
+.club-p-info{
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: Arial ,serif;		
+	color: #fff;
+	z-index: 2;
+	position: relative;	
+	letter-spacing: 0.5px;
+}
+.AMG-drive section .section-header12{
+	margin-bottom: 33px;
+	text-align: center;
+}
+.section-detail{
+	font-family: Arial,serif;
+    font-weight: 400;
+	max-width:649px;
+	margin:0 auto;
+	
+}
+a.lianjie{
+	font-size: 14px;
+	width: 200px;
+	height: 50px;
+	line-height: 40px;
+	background: #c00;
+	display: inline-block;
+	padding:5px 10px ;
+	border-radius: 2px;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+.p-img1{width: 100%;}
+.p-img2{
+	width:213px;
+	height:213px;
+}
+.AMG-drive picture p{
+	font-size: 20px;
+	font-family:inherit;
+}
+.amgNews{
+	text-align: center;
+		
+}
+.news-first{	
+	margin: 0 auto;
+	max-width:940px;
+	position: relative;
+	top: 0;
+}
+.amgNews .news-first img{
+	width: 100%;
+	margin-bottom: 15px;
+	object-fit: cover;
+	margin-top:40px;
+	
+}
+.amgNews .news-first .news-details{
+	width: 244px;
+	position: absolute;
+	bottom:40px;
+	left: 10px;
+	background: transparent;
+}
+.amgNews .news-first .news-details div:first-child {
+	font: normal 400 36px/1.03 SimSun,serif;
+	width:100%;
+	margin-bottom: 20px;
+	background: transparent;
+}
+.amgNews .news-first .news-details a{
+	display: inline-block;
+    background: #c00;
+	font:12px ;
+	width: 100px;
+    height: 30px;
+	text-align: center;
+	line-height: 20px;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border-radius: 2px;
+}
+.recent-news,.news-bottom,.bottom-text{
+	max-width: 940px;
+	margin: 0 auto;		
+}
+.news-bottom .lianjie{
+	margin-top:100px ;
+}
+.recent-news-img{
+	width: 32%;
+	margin-right:2%;
+	float: left;
+	cursor: pointer;
+}
+.recent-news .recent-news-img:last-child{
+	margin:0;
+}
+.recent-news-img div:first-child img{
+	width: 100%;
+	height: 200px;
+}
+.recent-news-img div:nth-child(3){
+	font: 600 16px/1.32 SimSu,serif;
+	text-align: left;
+}
+.recent-news-img div:nth-child(2){
+	font-size:12px;
+	text-align: left;
+}
+.recent-news-img div:nth-child(2)::after{
+	content: "";
+	width: 12px;
+	height:1px;
+	box-sizing: border-box;
+	background-color: #9e9e9e;
+	display: block;
+	margin:8px 0 18px 0;
+}
+.bottom-text{
+	margin-top: 150px;
+}
+.bottom-text div:first-child p{
+	height: 2px;
+	background: #fff;
+	width: 48px;
+	margin:20px 0;
+}
+.bottom-text div:nth-child(2) p{
+	color: #c7c7c7;
+	font-size: 13px;
+}
+ span.head-before::before{
+	content: "";
+	background: #c00;
+	width: 1px;
+	height: 45px;
+	position: absolute;
+	left:-2%;
+	z-index: 1;
+	margin-right: 15px;
+	transform: rotate(15deg);		
+}
+.bottom-logo{
+	margin:50px 0 150px ;
+	text-align:right;
+	height:40px;
+	vertical-align:baseline;
+	font-size:20px;
+	line-height: 100%;
+	}
+.bottom-logo img{
+	height:100%;
+	margin-left:20px;
+}
+.section-detail0{
+	text-align: center;
+	max-width:640px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.amg-racing-img{
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+.amg-racing-v{
+	width: 100%;
+	position: relative;
+	z-index:20;
+}
+
+
+#poster-img{
+	width:100%;
+	height: 99%;
+	position:absolute;
+	z-index:30;
+	right:0;
+	bottom:4%;
+}
+.miss{
+	display: none;
+}
+.amg-racing .p-img2{
+	position: absolute;
+	top:-85px;
+	left: 42.5%;
+	z-index: 20;
+}
+#post-img{
+	width:100%;
+	height: 100%; 
+	position: absolute;
+	/* background:url(../img/AMG驾驶学院封面PC.jpg) no-repeat;
+    background-size:cover; */
+	z-index:10;
+	/* margin-top:; */
+	right: 0;
+	top: 3%;
+}
+#video12{
+	width: 100%;
+}
+.racing-p{
+	margin-top: 120px;
+	font-size: 20px;
+	text-align: center;
+}
+#poster_img{
+	width:100%;
+
+	position: absolute;
+	/* background:url(../img/Mercedes-AMG-GT1-pc1.jpg) no-repeat ;
+    background-size:cover; */
+	z-index:10;
+	right: 0;
+}
+#video1{
+	width: 100%;	
+}
+.post-img1{
+	width: 100%;	
+}
+.post-img1:before{
+	content: "";
+	display: inline-block;
+	width: 1px;
+	padding: 2%;
+}
+.poster_img1{
+	width: 100%;
+	margin-top:1%;
+	position: relative;
+}
+.poster_img1:before{
+	content: "";
+	display: inline-block;
+	width:1px;
+	padding: 4%;
+}
+.poster-img1{
+	width: 100%;	
+	position: relative;
+}
+.poster-img1:before{
+	content: "";
+	display: inline-block;
+	width:0.5px ;
+	padding: 1%;
+}
+
+@media all and (max-width: 768px){
+	span.head-before{
+		font-size: 24px;
+	}
+	span.head-before::before{
+		height:25px ;
+		top: 1%;
+		left:-4%;
+	}
+	.amgNews .news-first .news-details div:first-child{
+		font-size: 24px;
+	}
+	.club-p-info{
+		font-size: 13px;	
+	}
+	.p-img2{
+		width: 108px;
+		height: 108px;
+	}
+	.amg-racing .p-img2{
+		width: 108px;
+		height: 108px;
+		top: 5%;
+		left: 37%;
+	} 
+	.racing-p{
+		font-size: 14px;
+		margin-top:100px;	
+	}
+	.recent-news{
+		display: none;
+	}
+	.lianjie-top{
+		margin-top: 10px!important;
+	}
+	.amgNews .news-first .news-details{
+		position: static;
+		width: 100%;
+	}
+	/* .amgNews .news-first .news-details div:first-child{
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+	} */
+
+	.amgNews .news-first .news-details a{
+		display: none;
+	}
+}

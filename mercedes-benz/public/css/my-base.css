@@ -1,0 +1,29 @@
+/*设置网页总体样式*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+.my-main{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+/*设置字体样式*/
+.my-family{
+    font-family: "SimSun";
+}
+.my-large{
+    font-size: 1.2rem;
+}
+.my-title{
+    font: normal 400 36px/50px "SimSun",serif;
+}
+.my-small{
+    font-size: 1.1rem;
+}
+/*链接样式*/
+a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>限时购车新方案</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/my-base.css">
+    <link rel="stylesheet" href="css/special-offer.css">
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/vehicles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/xiazaichanpshouce.js"></script>
+    <style>
+    ul li,ul ol{
+      list-style: none;
+}
+i,b,em,strong{
+      font-style: normal;
+}
+body{
+      font-family: '????';
+}
+img{
+      display: block;
+}
+.dh ul{
+      position: relative;
+      overflow: hidden;
+      width: 910px;
+      height: 306px;
+      margin: 60px auto 0;     
+}
+.dh ul li{
+      float: left;
+      width: 108px;
+      overflow: hidden;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+}
+.dh ul li a{
+      display: block;
+      width: 100%;
+      height: 100%;
+}
+.dh ul li .layer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background:rgba(27,29,36,0.75);
+      height: 100%;
+}
+.dh ul li .layer .p1{
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+}
+.dh ul li .layer .p2{
+      position: absolute;
+      bottom: 5px;
+      right: -200%;
+}
+.dh ul li .layer .p2 b,.dh ul li .layer .p2 span{
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+}
+.dh ul li .layer .p1 b,.dh ul li .layer .p1 span{
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+}
+
+.col1{
+      color: #00A39A;
+}
+.col2{
+      color: #fff;
+      position: relative;
+      left:35px
+}
+.dh>ul>li>a{
+      margin-top:80px;
+      padding-bottom:40px
+}
+.dh>ul>li>a>img{
+      width:100%
+}
+    </style>
+</head>
+<body>
+    <!--网页头部-->
+    <header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg row ">
+        <a href="home.html" class="navbar-brand "><img src="img/benz/benz-logo.png" class="homo-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse mt-4" id="main"  >
+            <ul class=" navbar-nav">
+                <li class="nav-item ml-3">
+                    <a class="nav-link" style="cursor: pointer">车型</a>
+                    <ul class="drop-down-content drop-one">
+                        <li class="drop-down-content2">
+                            <div class="mycontainer">
+                                <h4>
+                                        <body onload="carModelTitle('轿车')">
+                                                <!-- 容器 -->
+                                                <div class="allModel">
+                                                    <!-- 左边按钮 -->
+                                                    <!--<div class="click" id="click-left">
+                                                        <div class="click-left click-left-inside">
+                                                        </div>
+                                                    </div>-->
+                                                    <!-- 中间内容 -->
+                                                    <div class="flex">
+                                                        <div class="title flex_item">所有车型</div>
+                                                        <ul class="small_title flex_item car_nav">
+                                                            <li class="li_active">轿车</li>
+                                                            <li>SUV</li>
+                                                            <li>轿跑车 &amp; 敞篷跑车</li>
+                                                            <li>MPV</li>
+                                                        </ul>
+                                                        <div class="flex_item car_body">
+                                                           <ul id='getModel' class='getModelbox'>
+                                                           </ul>
+                                                        </div>
+                                                        <!--分割线，导航-->
+                                                    </div>
+                                                    <!-- 右边按钮 -->
+                                                    <!--<div class="click" id="click-right">
+                                                        <div class="click-right click-right-inside">
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                            </body> 
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item ml-3">
+                    <a class="nav-link"  style="cursor: pointer" href="car.html">购车指南</a>
+                   
+                </li>
+
+                <li class="nav-item ml-3">
+                    <a class="nav-link"  style="cursor: pointer" href="muban.html">车辆预约</a>
+                    
+                </li>
+
+                <li class="nav-item ml-3"><a class="nav-link" style="cursor: pointer" href="julebu.html">俱乐部</a>
+
+                </li>
+
+                <li class="nav-item ml-3"><a class="nav-link" style="cursor: pointer" href="mypro.html">梅赛德斯-AMG</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <!--网页主体-->
+    <div id="main" class="my-main">
+        <!--标题-->
+        <div id="my-title" class="mb-5">
+            <div class="row mt-5">
+                <div class="col-3"></div>
+                <div class="col-6 text-center">
+                    <span class="text-muted my-title p-0 w-100 m-0">限时购车新方案</span>
+                </div>
+                <div class="col-3">
+                </div>
+            </div>
+        </div>
+       
+        <!--第二张大图-->
+        <div class="my-main bimg">
+            <img src="img/hero1-pc.jpg" class="w-100 mt-5 ">
+            <!--图上的字-->
+            <span id="my-span2">“攻新计”置换重购优享方案</span>
+            <!--图片下方的图和字-->
+            <img src="img/1.svg" id="img-fu2">
+            <div class="text-center text-dark mt-5  container" id="fu-text2">攻获新座驾，“计”在必得。即刻使用梅赛德斯-奔驰“攻新计”，畅享置换/重购优享方案，最高可享16,000保险支持，更有星睿二手车置换方案及“款待常享”金融计划，计上加计，助你轻松攻获全新座驾。</div>
+        </div>
+        <!--第二张大图下的文字-->
+        <div>
+            <!--2000-->
+            <div class="my-main mt-5 pt-4 bimg1-msg">
+                <!--标题-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-dark font-weight-bold">享保险支持最高2,000元/台适用车型<span class="my-small text-muted font-weight-normal">共有4个车型</span></h3>
+                    </div>
+                </div>
+                <!--第一行-->
+                <div class="row bimg1-msg-1 mb-0 mt-3">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">A级车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2  my-a-div">
+                        <a href="#">B级轿车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">CLA运动轿车</a>
+                    </div>
+                </div>
+                <!--第二行-->
+                <div class="row bimg1-msg-1 mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">GLA SUV</a>
+                    </div>
+                </div>
+                <!--小屏幕出现的按钮-->
+                <div class="text-center">
+                    <a href="#" class="btn my-smbtn">查看所有车型</a>
+                </div>
+            </div>
+            <!--3000-->
+            <div class="my-main mt-5 pt-4 bimg1-msg">
+                <!--标题-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-dark font-weight-bold">保险支持最高3,000元/台适用车型<span class="my-small text-muted font-weight-normal">共有4个车型</span></h3>
+                    </div>
+                </div>
+                <!--第一行-->
+                <div class="row bimg1-msg-1 mb-0 mt-3">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">长轴距C级轿车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2  my-a-div">
+                        <a href="#">长轴距C级运动轿车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">标准轴距C级轿车运动版</a>
+                    </div>
+                </div>
+                <!--第二行-->
+                <div class="row bimg1-msg-1 mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">C级旅行轿车</a>
+                    </div>
+                </div>
+                <!--小屏幕出现的按钮-->
+                <div class="text-center">
+                    <a href="#" class="btn my-smbtn">查看所有车型</a>
+                </div>
+            </div>
+            <!--5000-->
+            <div class="my-main mt-5 pt-4 bimg1-msg">
+                <!--标题-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-dark font-weight-bold">保险支持最高5,000元/台适用车型 <span class="my-small text-muted font-weight-normal">共有6个车型</span></h3>
+                    </div>
+                </div>
+                <!--第一行-->
+<div class="dh sfq container">
+    <ul>
+        <li class="curr">
+            <a href="javascript:;"><img src="img/14.png" alt=""></a>
+            <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> CLA</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/43.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> CLE</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/22.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> GLK</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/16.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> CE</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/19.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> P</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/29.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2">GLA</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/37.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2">SLC</b><span class="col1"></span></p>
+            </div>
+        </li>
+    </ul>
+</div>
+            </div>
+            <!--6000-->
+            <div class="my-main mt-5 pt-4 bimg1-msg">
+                <!--标题-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-dark font-weight-bold">保险支持最高6,000元/台适用车型<span class="my-small text-muted font-weight-normal">共有4个车型</span></h3>
+                    </div>
+                </div>
+                <!--第一行-->
+                <div class="dh sfq container">
+    <ul>
+        <li class="curr" style="width:200px">
+            <a href="javascript:;"><img src="img/1.png" alt=""></a>
+            <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> CE</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/13.png" alt=""></a>
+            <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> CLE</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/12.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> GLK</b><span class="col1"></span></p>
+            </div>
+        </li>
+        <li>
+        <a href="javascript:;"><img src="img/26.png" alt=""></a>
+                <div class="layer">
+                <p class="p1"><b class="col1"></b><span class="col2"></span></p>
+                <p class="p2"><b class="col2"> CE</b><span class="col1"></span></p>
+            </div>
+        </li>
+    </ul>
+</div>
+            </div>
+        </div>
+
+         <!--第一张大图-->
+        <div class="my-main bimg">
+            <img src="img/PC%20banner.png" class="w-100 mt-5">
+            <!--图上的字-->
+         
+            <!--图片下方的字-->
+            <div class="text-center text-dark mt-4">即日起至2018年9月30日，凡购买梅赛德斯 -奔驰1.6L以下排量车型，将可享受车船税全免政策，真正做到 “买奔驰，车船·税全免“。</div>
+        </div>
+        <!--第一张大图下的文字-->
+        <div class="my-main mt-5 pt-4 bimg1-msg">
+            <!--标题-->
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-dark font-weight-bold">享受车船税全免政策的适用车型 <span class="my-small text-muted font-weight-normal">共有7个车型</span></h3>
+                </div>
+            </div>
+            <!--第一行-->
+            <div class="row bimg1-msg-1 mb-0 mt-3">
+                <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                    <a href="benz-s.html">S级轿车</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2  my-a-div">
+                    <a href="#">B级运动旅行车</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                    <a href="#">长轴距C级轿车</a>
+                </div>
+            </div>
+            <!--第二行-->
+            <div class="row bimg1-msg-1 mb-0">
+                <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                    <a href="#">长轴距C级运动轿车</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12  pl-4 pr-4 pt-2 pb-2 my-a-div">
+                    <a href="#">C级旅行轿车</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div" my-a-div>
+                    <a href="#">CLA运动轿车</a>
+                </div>
+            </div>
+            <!--第三行-->
+            <div class="row bimg1-msg-1">
+                <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-1 pb-1 my-a-div">
+                    <a href="#">GLA SUV</a>
+                </div>
+            </div>
+            <!--小屏幕出现的按钮-->
+            <div class="text-center">
+                <a href="#" class="btn my-smbtn">查看所有车型</a>
+            </div>
+        </div>
+        <!--第三张大图-->
+        <div class="my-main bimg">
+            <img src="img/a-class.jpg" class="w-100 mt-5 ">
+            <!--图上的字-->
+            <span id="my-span3">“任性1/4”购置税支持方案</span>
+            <!--图片下方的图和字-->
+            <img src="img/2.svg" id="img-fu3">
+            <div class="text-center text-dark container" id="fu-text3">年轻当然要任性，但别太任性，1/4的任性由奔驰为它买单。即日起至9月30日，购买梅赛德斯-奔驰指定车型即可享受25%购置税支持方案。</div>
+        </div>
+        <!--第三张大图下的文字-->
+        <div>
+            <!--2000-->
+            <div class="my-main mt-5 pt-4 bimg1-msg">
+                <!--标题-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-dark font-weight-bold">支持车型<span class="my-small text-muted font-weight-normal">共有5个车型</span></h3>
+                    </div>
+                </div>
+                <!--第一行-->
+                <div class="row bimg1-msg-1 mb-0 mt-3">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">A级轿车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2  my-a-div">
+                        <a href="#">B级运动轿车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">CLA SUV</a>
+                    </div>
+                </div>
+                <!--第二行-->
+                <div class="row bimg1-msg-1 mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">长轴距C级轿车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">长轴距C级运动轿车</a>
+                    </div>
+                </div>
+                <!--小屏幕出现的按钮-->
+                <div class="text-center">
+                    <a href="#" class="btn my-smbtn">查看所有车型</a>
+                </div>
+            </div>
+        </div>
+        <!--第四张大图-->
+        <div class="my-main bimg">
+            <img src="img/hero3-pc.jpg" class="w-100 mt-5 ">
+            <!--图上的字-->
+            <span>AMG车型优惠方案</span>
+            <!--图片下方的图和字-->
+            <img src="img/artboard-pc.svg" id="img-fu4">
+        </div>
+        <!--第四张大图下的文字-->
+        <div>
+            <div class="my-main mt-5 pt-4 bimg1-msg">
+                <!--标题-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-dark font-weight-bold">支持车型<span class="my-small text-muted font-weight-normal">共有15个车型</span></h3>
+                    </div>
+                </div>
+                <!--第一行-->
+                <div class="row bimg1-msg-1 mb-0 mt-3">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG C 63</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2  my-a-div">
+                        <a href="#">梅赛德斯-AMG S 63 L 4MATIC+ & S 65 L</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG A 45 4MATIC</a>
+                    </div>
+                </div>
+                <!--第二行-->
+                <div class="row bimg1-msg-1 mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG CLA 45 4MATIC</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLA 45 4MATIC</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLC 43 4MATIC及其特别版</a>
+                    </div>
+                </div>
+                <!--第三行-->
+                <div class="row bimg1-msg-1 mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLC 43 4MATIC 轿跑 SUV及其特别版</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLE 43 4MATIC</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLC 43 4MATIC</a>
+                    </div>
+                </div>
+                <!--第四行-->
+                <div class="row bimg1-msg-1 mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLE 43 4MATIC 轿跑 SUV</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLE 63 4MATIC 轿跑 SUV</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG GLC 63 4MATIC</a>
+                    </div>
+                </div>
+                <!--第五行-->
+                <div class="row bimg1-msg-1 mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG G 63</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG C 63 轿跑车</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 pl-4 pr-4 pt-2 pb-2 my-a-div">
+                        <a href="#">梅赛德斯-AMG S 63 4MATIC+ 轿跑车</a>
+                    </div>
+                </div>
+                <!--小屏幕出现的按钮-->
+                <div class="text-center">
+                    <a href="#" class="btn my-smbtn">查看所有车型</a>
+                </div>
+            </div>
+        </div>
+
+        <!--最后一段——有效期声明-->
+        <div class="my-main pt-5" id="last-msg">
+            <hr>
+            <p>*以上方案有效期至2018年9月30日。</p>
+            <p>*本网站网页内所有相关价格及信息基于厂商建议零售价格，仅适用于购买奔驰金融公司金融产品，并与经销商达成一致的客户。</p>
+            <p>*本网站网页内所有厂商建议零售价格和产品信息仅供参考。奔驰金融公司金融产品的具体价格及细节以客户与授权经销商协商一致的最终零售价格为准。具体的零售交易价格、产品配置及金融产品相关信息请与授权经销商确定。</p>
+            <p>*本页面仅展示厂商向授权经销商公布的相关销售政策。具体适用车型、适用客户、适用期限及适用条件等请与当地授权经销商咨询确定。</p>
+            <p>“先享后选”方案暂不适用于乌鲁木齐、宝鸡、曲靖、龙岩、南阳、大庆、延边、盘锦、营口、锦州、长治、鞍山、丽水、衢州、金华、阜阳、蚌埠等城市及地区（详细金融产品提供情况敬请咨询当地授权经销商）。</p>
+            <p>“先享后选”中新车的期末车辆保值金额取决于此方案的相关参数；且月付以每年20,000公里行驶里程计算。
+                *更多详情，敬请咨询梅赛德斯-奔驰授权经销商，或致电400-818-1188。  </p>
+        </div>
+        <!--右下角分享-->
+        <div id="share">
+            <div class="row">
+                <div class="col-4 offset-8">
+                    <span class="my-large p-4">分享到</span>
+                    <span class="p-3">
+                        <a href="#">
+                            <img src="img/wechat.png"  style="width: 8%;">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <img src="img/sina.png" style="width: 8%;" >
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/benz-s.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/vehicles.js"></script>
+     <script >
+    
+        $("a.nav-link").on("click",function(){
+            var $btn=$(this);
+            var $o=$btn.next();
+            var $ro=$btn.parent().next().children(1);
+            var $lo=$btn.parent().prev().children(1);
+            var $ro2=$btn.parent().next().next().children(1);
+            var $lo2=$btn.parent().prev().prev().children(1);
+            var $a=parseInt($("nav").width());
+            if($a>992){
+            if($o.is(":hidden"))
+            {   $o.addClass("listshow")//.css("display","block")
+                $ro.removeClass("listshow")
+                $lo.removeClass("listshow")
+                $ro2.removeClass("listshow")
+                $lo2.removeClass("listshow")
+            }
+            else
+            {
+                $o.removeClass("listshow")//.css("display","none")
+
+            }
+            }
+        })
+
+        function getcarid(cid){
+            cid=cid-1;
+            console.log(cid)
+            var vv=document.getElementById("getModel").childNodes;
+            if(cid<=5){
+                vv[0].childNodes[1].src=ii[cid]
+            }
+            else if(cid<=10){
+                vv[1].childNodes[1].src=ii[cid]
+            }
+            else if(cid<=13){
+                
+                vv[2].childNodes[1].src=ii[cid]
+            }
+            else{
+                vv[3].childNodes[1].src=ii[cid]
+           }
+         }
+    </script>
+    <!--网页底部-->
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,234 @@
+.kb{
+    height:500px
+}
+body{
+    background:#BCD1E0;
+}
+.top{
+    width:100%;
+}
+.top-nav{
+    margin-top:10px;
+    margin-left:20%;
+}
+.top-nav ul{
+    list-style: none;
+}
+.top-nav>ul>li,.top-nav>ul>li>div{
+    float:left;
+}
+.top-nav-left{
+    margin-right:150px;
+    font-size: 13px;
+}
+.top-nav-left>div>span{
+    font-size: 16px;
+}
+.top-nav-right{
+    margin-left:80px;
+    float: left;
+}
+.top-nav-right>a{
+    margin:0 2px;
+    font-size:15px;
+    text-decoration: none;
+}
+.top-nav-right>.pay{
+    color:#000;
+    font-size: 13px;
+}
+.top-nav-right>.yuyue{
+    background: #666666;
+    color:#fff;
+    padding:2px 8px;
+    margin-left:30px;
+}
+.top-nav-right>.yuding{
+    background: #00ADEF;
+    color:#fff;
+    padding: 2px 8px;
+}
+.top-nav-right>.yuyue,.top-nav-right>.yuding:hover{
+    text-decoration: none;
+}
+.top-nav-right>.pay:hover{
+    text-decoration: none;
+    color:#00ADEF;
+}
+.mylist>div,.mylist>div>a{
+    font-size:13px;
+    padding:10px;
+    color:#000;
+}
+.mylist>div>a:hover{
+    text-decoration: none;
+}
+.mylist{
+    box-shadow: 1px 1px 5px ;
+    display: none;
+    position: absolute;
+    right:34%;
+    top:600px;
+    background: white;
+}
+.section-header{
+    text-align: center;
+    margin-top:100px;
+    color:#666;
+}
+.section-header_detail{
+    margin-top: 40px;
+    color:#000;
+    margin-bottom: 40px;
+}
+.section-tab>table{
+    margin:50px auto;
+    text-align: center;
+}
+.section-tab-text{
+    width:300px;
+    font-size:14px;
+    margin:10px auto;
+}
+.section-tab-text>p{
+    font-size: 23px;
+}
+.myimg{
+    width:90%;
+}
+.mycontainer1{
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.nav-tabs{
+    margin:50px 350px;
+    padding-bottom: 20px;
+}
+.nav-item{
+    margin:20px 50px;
+}
+.tab-pane{
+    width:900px;
+    margin:10px 170px;
+}
+.tab-content>.tab-pane>.row>div>img{
+    width:100%;
+    margin-top:10px;
+}
+.btn{
+    margin-left:40%;
+    margin-top: 20px;
+    width:150px;
+    background: #00ADEF;
+    color:#fff;
+}
+#more>div>div>img{
+    width:100%;
+    margin-top:10px;
+}
+#myhover{
+    position: relative;
+    z-index: 0;
+}
+#myhover1{
+    width: 100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+#myhover1:hover{
+    background: white;
+    opacity: 0.4;
+}
+#mydownload{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: 20;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.bgimg{
+    width:1100px;
+    height:430px;
+    background: white;
+    position: relative;
+    top:180px;
+    left:180px;
+}
+#mydownload>.bgimg>img{
+    position: absolute;
+    top:60px;
+    left:80px;
+}
+#mydownload>.bgimg>a{
+    color:#000;
+    position: absolute;
+    bottom: 20px;
+    left:100px;
+}
+#mydownload>.bgimg>a,#mydownload>.bgimg>div>a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+#mydownload>.bgimg>div>a{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    right:30px;
+    color:#000;
+}
+
+
+
+#myCar{
+    position: relative;
+}
+.red{
+    border-bottom: 35px solid rgb(122, 1, 1);
+    color: rgb(122, 1, 1)
+}
+.blue{
+    border-bottom: 35px solid rgba(32, 87, 119, 0.829);
+    color: rgba(32, 87, 119, 0.829)
+}
+.withe{
+    border-bottom: 35px solid white;
+    color: white
+}
+.black{
+    border-bottom: 35px solid black;
+    color: black
+}
+.myCar2{
+    position: relative;
+    top:-180px;
+    left:-450px;
+}
+.myCar2 span{
+    margin-left: 30px
+}
+.bling{
+    position: relative;
+    top:0px;
+}
+.neishi{
+    position: relative;
+    top:-270px;  
+    float: right;
+}
+.neishi>div{
+    margin:10px;
+    cursor: pointer;
+}
+.mytop{
+    position: relative;
+    top: -150px;
+}

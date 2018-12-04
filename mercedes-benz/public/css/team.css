@@ -1,0 +1,1247 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: "Arial",sans-serif;
+    font-weight:400;
+    background-color: #000000;
+    font-size:14px;
+    color:#fff;
+}
+h1,h2,h3,h4,h5,ul,ol,p{
+    margin:0;
+    padding:0;
+}
+.container{
+    margin:0 auto;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color:#fff;
+    
+}
+ul{
+    list-style: none;
+}
+/*轮播图图片切换------------------------------------------------*/
+div.carousel{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+ul.carousel-inner{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+li.carousel-item{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+}
+li.carousel-item img{
+    width: 100%;
+    height:600px;
+}
+.carousel-type1,.carousel-type2,.carousel-type3{
+        position:relative;
+}
+.carousel-text2{
+        display: none;
+    }
+.carousel-text1{
+    text-align: center;
+    width: 80%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-100%);    
+}
+    .carousel-text1>h3{
+        font: normal 400 36px/50px "SimSun",serif;
+        font-weight:400;
+        font-size:20px;
+    }
+    .carousel-text1>h2{
+        font: normal 400 36px/50px "SimSun",serif;
+    }
+       .carousel-text1 a{
+        color:#fff;
+        padding:5px 15px;
+        margin-top:30px;
+        background-color: #c00;
+        display:inline-block;
+    }
+    .carousel-text1>span:after{
+        content: "";
+        position: relative;
+        width: 1px;
+        height: 40px;
+        opacity:1;
+        background-color: #fff;
+        transform: rotate(90deg);
+        display: inline-block;
+    }
+    .carousel-text1>h3{
+        font: normal 400 36px/50px "SimSun",serif;
+        font-weight:400;
+        font-size:20px;
+    }
+    .carousel-text1>h2{
+        font: normal 400 36px/50px "SimSun",serif;
+    }
+@media screen and (min-width: 768px){
+    .carousel-phone{
+        display:none;
+    }
+    div.carousel-phone1 {
+        display:none;
+    }
+}
+@media screen and (max-width:767px) {
+    .carousel-pc {
+        display: none;
+    }
+}
+/*左右箭头*/
+a.carousel-control-prev{
+    position: absolute;
+    top:50%;
+    left:10%;
+    transform:translateY(-50%);
+    background-color: transparent;
+    opacity:0.3;
+}
+a.carousel-control-next{
+    position: absolute;
+    right:10%;
+    top:50%;
+    transform:translateY(-50%);
+    background-color: transparent;
+    opacity:0.3;
+}
+a.carousel-control-next>i,a.carousel-control-prev>i{
+    font-size:40px;
+    padding:0 13px;
+}
+div.spanBox{
+    position:absolute;
+    width:300px;
+    height:20px;
+    bottom:2px;
+    left:50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+div.spanBox>span {
+	display:inline-block;
+    width:19px;
+    height:19px;
+    background-color:#FFF;
+    text-align:center;
+    cursor: pointer;
+    border-radius:50%;
+}
+div.spanBox .active {
+    background-color:#d10024;
+    border:solid 1px #d10024;
+}
+/*导航栏nav------------------------------------------*/
+.team_img {
+    top:0;
+    left:0;
+}
+/*导航样式*/
+nav>div.container{
+    margin:0 auto;
+    width: 80%;
+}
+ul.nav-ul{
+    width: 80%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+li.nav-item{
+    padding:15px 0;
+}
+.fixed{
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color: #000000;
+    z-index:100;
+}
+ul.nav-ul>li.active>a{
+    color:#c00;
+} 
+@media (max-width:767px){
+    nav{
+        display: none;
+    }
+}
+.nav_li {
+        position:absolute;
+        top: 100%;
+        left:50%;
+		transform:translateY(-50%);
+}
+/*
+ul.nav-2{
+position:fixed;
+width: 10px;
+margin-right:10px;
+right:0;
+top:50%;
+transform:translateY(-50%);
+z-index:999;
+}
+*/
+/*
+.nav-2>li{
+width: 10px;
+height: 10px;
+border-radius:50%;
+color:#fff;
+position:relative;
+background-color:#fff;
+margin-right:10px;
+}
+.nav-2>li+li{
+	margin-top:20px;
+}
+.nav-2>li>span{
+	position:absolute;
+	width: 150px;
+	height: 20px;
+	top:-50%;
+	left:100%;
+/*	transform:translate(0,-50%);
+	padding:5px 0;
+	text-align: center;
+	line-height:10px;
+	font-size:16px;
+	background-color: transparent;
+	transition:all 0.2s;
+	z-index:-1;
+}*/
+/*
+.nav-2>li:hover {
+	background-color: #c00;
+}
+.nav-2>li:hover .nav-span{
+	transform:translateX(-90%);
+	background-color: #222;
+}
+}
+*/
+/* ---------视频---------------------- */
+div.video{
+    width: 100%;
+}
+div.mz-video>video{
+    width:100%;
+}
+/**/
+/*----------------------------------------------------------------------------*/
+/*AMG车型*/
+div.section-head{
+    text-align: center;
+    color:#fff;
+    padding:30px 0;
+    font-size:14px;
+}
+div.section-head span{
+    font: 36px/50px SimSun,serif;
+    z-index: 2;
+    width: auto;
+    position: relative;
+    transform: scaleX(0.7);
+}
+div.section-head span:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    margin-right:20px;
+    background-color: #c00;
+    transform: rotate(15deg);
+    display: inline-block;
+}
+.section-product-ul{
+    text-align: center;
+    list-style: none;
+}
+.section-product-ul li{
+    border-bottom:3px solid transparent;
+    display:inline-block;
+}
+.section-product-ul li+li{
+    margin-left:40px;
+}
+.section-product-ul li a:hover{
+    color:#fff;
+}
+.section-product-ul li:active{
+    border-bottom:3px solid #c00;
+}
+/*-------------------------------------------------------------------------------------------------*/
+/*AMG车型列表栏*/
+.section-main1{
+    margin:0 auto;
+    width: 90%;
+    height: 400px;
+    position:relative;
+}
+ul.section-title{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+ul.section-list-car{
+    position:absolute;
+    top:40px;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+ul.section-list-car>li img{
+    width: 100%;
+}
+ul.section-list-car>li h3{
+    font: normal 400 32px/1 "SimSun",serif;
+}
+ul.section-list-car>li p{
+    margin-top:15px;
+    font: normal 500 14px/24px "PingFang SC",
+    "Hiragino Sans GB","Noto Sans CJK SC",
+    "Source Han Sans SC","Microsoft YaHei","SimHei",
+    Helvetica,Arial,serif;
+    font-size:14px;
+}
+/*车型图*/
+#section>div.container{
+    width: 100%;
+}
+div.wrap{
+    width:1170px;
+    height:440px;
+    margin:0 auto;
+    background-color:#000;
+    position:relative;
+}
+div.mask{
+    position:absolute;
+    top:0;
+    left:40px;
+    right:40px;
+    height:100%;
+    z-index:6;
+    opacity:1;
+}
+.wrap ul{
+    position:relative;
+}
+.wrap ul li{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.wrap ul li img{
+    width:100%;
+}
+div.mask{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index:10;
+    background-color: #000;
+}
+button{
+    width:30px;
+    height:50px;
+}   
+button.prev{
+    position:absolute;
+    top:50%;
+    left:10px;
+    transform:translateY(-50%);
+    border:none;
+    outline:none;
+    background-color: #000;
+    color:#c00;
+    font-size:20px;
+}
+button.next{
+    position:absolute;
+    top:50%;
+    right:10px;
+    background-color: #000;
+    transform:translateY(-50%);
+    border:none;
+    outline:none;
+    font-size:20px;
+    color:#c00;
+    font-size:20px;
+}
+div.list-text{
+    position: absolute;
+    width: 400px;
+    left:485px;
+    top:250px;
+    bottom:0;
+}
+div.list-text>ul{
+    position:relative;
+    width: 400px;
+    height: 200px;
+    color:#fff;
+}
+div.list-text>ul>li{
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+div.list-text>ul>li>p{
+    font: normal 500 14px/24px "PingFang SC",
+    "Hiragino Sans GB","Noto Sans CJK SC",
+    "Source Han Sans SC","Microsoft YaHei","SimHei",
+    Helvetica,Arial,serif;
+    font-size:14px;
+}
+div.list-text>ul>li>h3{
+    font: normal 400 36px/1 "SimSun",serif;
+}
+div.list-text>ul>li.active{
+    display:block;
+    color:#999;
+}
+@media (max-width:991px){
+    div.wrap{
+        display:none;
+    }
+    div.section-main1{
+        display:block;
+    }
+}
+@media (min-width:992px){
+    div.section-main1{
+        display:none;
+    }
+    div.wrap{
+        display:block;
+    }
+}
+/*查找经销商------------------------------------------------------------------------------*/
+div.section-search{
+    text-align: center;
+    color:#fff;
+    font-size:14px;
+    padding:30px 0;
+    margin:0 auto;
+}
+div.section-search>h3>span{
+    font: 36px/50px SimSun,serif;
+    z-index: 2;
+    width: auto;
+    position: relative;
+    transform: scaleX(0.7);
+}
+div.section-search>h3>span:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 45px;
+    top: 0;
+    left:0;
+    background-color: #c00;
+    transform: rotate(15deg);
+    display: inline-block;
+}
+div.mapContainer{
+    position: relative;
+    width: 100%;
+}
+.section-details{
+    position: absolute;
+    width: 375px;
+    top:40px;
+    left:100px;
+    height: 400px;
+    background-color: rgb(45, 45, 45);
+    opacity:1;
+    padding:10px;
+}
+div.section-details1{
+    width: 100%;
+    margin:15px 0;
+    color:#fff;
+}
+div.section-details1:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+div.details-text{
+    float:left;
+}
+div.details-span{
+    float:right;
+    margin:0;
+}
+div.details-text>span{
+    color:#999;
+    font-size:14px;
+}
+.details-text>span+span{
+    color:#fff;
+}
+.section-details1 a>i{
+    color:#c00;
+    font-size:18px;
+}
+.section-details input{
+    width: 345px;
+    font-size:14px;
+    outline:none;
+    color:#fff;
+    background-color: rgb(45, 45, 45);
+    border:0;
+    padding:15px 10px;
+    border:1px solid #fff;
+}
+.section-details2{
+    font-size:14px;
+    color:#fff;
+    text-align:left;
+    margin:15px;
+}
+div.section-list{
+    position: absolute;
+    top:170px;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:10px;
+    overflow:auto;
+    border-top:2px solid #fff;
+}
+div.listorder:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+ul.list-ul>li>div.listorder>p{
+    float:left;
+    margin:0;
+}
+ul.list-ul>li div.list-stan{
+    float:right;
+}
+ul.list-ul>li{
+    margin:10px 0;
+    border-bottom: 1px solid #fff;
+}
+ul.list-address>li{
+    margin:10px 0;
+}
+ul.list-address>li>button{
+    padding:0 5px;
+    outline:none;
+    color: #999;
+    width: 150px;
+    height: 30px;
+    border:1px solid #999;
+    border-radius:20px;
+    background-color: rgb(45, 45, 45);
+}
+ul.list-address>li>button:first-child{
+    background-color: #c00;
+    border:1px solid #c00;
+}
+/*----------------------------------地图-----------------------------------------------*/
+#map{
+    background-color: #333;
+    width: 100%;
+    height: 500px;
+    float:left;
+}
+div.mapContainer:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+/*-----------------------------------------------------------------------*/
+/*section--------关于AMG*/
+.section-about{
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    font-size:14px;
+}
+div.section-about1{
+    margin:0 auto;
+    padding:30px 0;
+}
+div.section-about1>h3>span{
+    font: 36px/50px SimSun,serif;
+    z-index: 2;
+    width: auto;
+    position: relative;
+    transform: scaleX(0.7);
+}
+div.section-about span:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    background-color: #c00;
+    transform: rotate(15deg);
+    display: inline-block;
+}
+.section-text{
+    position:relative;
+}
+.section-text:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.section-text img{
+    width: 100%;
+    float:left;
+}
+.about-text a:hover{
+    color:#c00;
+}
+.about-3{
+    line-height:30px;
+    text-align: left;
+    }
+@media (min-width: 768px) {
+    .about-1 {
+        width: 80%;
+        position:absolute;
+       top:50%;
+      left:50%;
+       transform:translate(-50%,-50%); 
+    }
+    .about-2{
+        width: 50%;
+    }
+   .about-4>h3 {
+    font:normal 400 36px/1.89 "SimSun",serif;
+    text-align: left;
+    margin-bottom:20px;
+   }
+}
+@media screen and (max-width: 767px){
+    .about-4>h3{
+        font-size:20px;
+        transform: scaleX(0.7);
+        margin-bottom:15px;
+    }
+    .about-1{
+        padding:30px;
+    }
+    .main-phone-ul>li{
+        position: relative;
+        width: 40px;
+    }
+    .main-phone-ul>li::before{
+        content:"";
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 100%;
+        height: 2px;
+        color:#333;
+    }
+}
+
+/*section----AMG概述-------------------------------------------*/
+div.section-main:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.main-img {
+    width: 50%;
+    height: 500px;
+    background-color: #fff;
+    text-align: left;
+    float:left;
+    position:relative;
+}
+ul.main-img-pc{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ul.main-img-pc>li{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+ul.main-img-pc>li>img{
+    width: 100%;
+    height: 500px;
+}
+ul.main-ul-pc:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+ul.main-ul-pc>li{
+    float:left;
+    margin-left:10px;
+}
+ul.main-ul-pc>li>a{
+    position: relative;
+    margin:0;
+    padding:10px 15px;
+}
+ul.main-ul-pc>li>a.active{
+    color: #c00;
+}
+ul.main-ul-pc>li>a.active:before{
+    content:"";
+    width: 4px;
+    height: 16px;
+    background-color: #c00;
+    display: block;
+    transform: rotate(45deg) skew(30deg);
+    position:absolute;
+    top:10px;
+    left:0;
+    z-index:22;
+}
+ul.main-title-pc{
+    margin-top:15px;
+    position:relative;
+    height: 30px;
+}
+ul.main-title-pc>li{
+    position:absolute;
+    top:0;
+    left:0;
+    font: normal 400 28px/1 "SimSun",serif;
+    color:#333;
+}
+div.main-produce-pc{
+    width: 80%;
+    overflow: hidden;
+    color:#333;
+    margin-top:50px;
+    font-size:16px;
+    line-height: 35px;
+}
+div.main-produce-pc>ul{
+    width: 400%;
+}
+div.main-produce-pc>ul:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+div.main-produce-pc>ul>li{
+    float:left;
+    width:25%;
+}
+div.main-text {
+    width: 50%;
+    float:left;
+    height: 500px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/*-----------------AMG概述媒体查询*/
+@media screen and (min-width:768px){
+    div.main-img{
+        width: 50%;
+    }
+    div.main-text{
+        width: 50%;
+    }
+    img.main-li-phone{
+        display:none;
+    }
+}
+@media screen and (max-width:767px) {
+    div.main-img{
+        width:100%;
+    }
+    div.main-text>ul.main-ul-pc{
+        width: 80%;
+        margin:0 auto;
+    }
+    ul.main-title-pc{
+        width: 80%;
+        margin: 0 auto;
+    }
+    div.main-text{
+        width: 100%;
+    }
+    div.main-produce-pc{
+        margin: 0 auto;
+    }
+    img.main-li-pc{
+        display:none;
+    }
+}
+/*----------------------------AMG起点-----------------------------*/
+div.section-start:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+div.start-text{
+    width: 50%;
+    float:left;
+}
+ul.start-ul-pc{
+    margin:0 auto;
+}
+ul.start-ul-pc:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+ul.start-ul-pc>li{
+    float:left;
+    margin-left:10px;
+    padding:10px 15px;
+}
+ul.start-ul-pc>li>a{
+    position: relative;
+    margin:0;
+    padding:10px;
+    color:#333;
+}
+ul.start-ul-pc>li>a.active{
+    color: #c00;
+}
+ul.start-ul-pc>li>a.active:before{
+    content:"";
+    width: 4px;
+    height: 16px;
+    background-color: #c00;
+    display: block;
+    transform: rotate(45deg) skew(30deg);
+    position:absolute;
+    top:10px;
+    left:0;
+    z-index:22;
+}
+ul.start-title-pc{
+    width: 80%;
+    margin:0 auto;
+    margin-top:15px;
+    position:relative;
+    height: 30px;
+}
+ul.start-title-pc>li{
+    position:absolute;
+    top:0;
+    left:0;
+    font: normal 400 28px/1 "SimSun",serif;
+    color:#333;
+}
+div.start-produce-pc{
+    width: 80%;
+    margin:0 auto;
+    overflow: hidden;
+    color:#333;
+    margin-top:50px;
+    font-size:16px;
+    line-height: 35px;
+}
+div.start-produce-pc>ul{
+    width: 400%;
+}
+div.start-produce-pc>ul:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+div.start-produce-pc>ul>li{
+    float:left;
+    width:25%;
+}
+div.start-text {
+    width: 50%;
+    float:left;
+    height: 500px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+div.start-img {
+    width: 50%;
+    height: 500px;
+    background-color: #fff;
+    text-align: left;
+    float:left;
+    position:relative;
+}
+ul.start-img-pc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+}
+ul.start-img-pc>li{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+ul.start-img-pc>li>img{
+    width: 100%;
+    height: 500px;
+}
+/* AMG起点媒体查询*/
+@media screen and (min-width:768px){
+    div.start-text{
+        width: 50%;
+    }
+    div.start-img{
+        width: 50%;
+    }
+    img.start-li-phone{
+        display:none;
+    }
+}
+@media screen and (max-width:767px) {
+    div.start-text{
+        width: 100%;
+    }
+    ul.start-ul-pc{
+        width: 80%;
+        margin: 0 auto;
+    }
+    div.start-img{
+        width: 100%;
+    }
+    div.start-produce-pc{
+        margin-top:15px;
+    }
+    img.start-li-pc{
+        display:none;
+    }
+}
+/*-------------------------性能设计----------------------------------*/
+div.section-design:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.design-img {
+    width: 50%;
+    height: 500px;
+    background-color: #fff;
+    text-align: left;
+    float:left;
+    position:relative;
+}
+ul.design-img-pc{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ul.design-img-pc>li{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+ul.design-img-pc>li>img{
+    width: 100%;
+    height: 500px;
+}
+ul.design-ul-pc:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+ul.design-ul-pc>li{
+    float:left;
+    margin-left:10px;
+    padding:10px 15px;
+}
+ul.design-ul-pc>li>a{
+    position: relative;
+    margin:0;
+    padding:10px 15px;
+    color:#333;
+}
+ul.design-ul-pc>li>a.active{
+    color: #c00;
+}
+ul.design-ul-pc>li>a.active:before{
+    content:"";
+    width: 4px;
+    height: 16px;
+    background-color: #c00;
+    display: block;
+    transform: rotate(45deg) skew(30deg);
+    position:absolute;
+    top:10px;
+    left:0;
+    z-index:22;
+}
+ul.design-title-pc{
+    margin-top:15px;
+    position:relative;
+    height: 30px;
+}
+ul.design-title-pc>li{
+    position:absolute;
+    top:0;
+    left:0;
+    font: normal 400 28px/1 "SimSun",serif;
+    color:#333;
+}
+div.design-produce-pc{
+    width: 80%;
+    overflow: hidden;
+    color:#333;
+    margin-top:50px;
+    font-size:16px;
+    line-height: 35px;
+}
+div.design-produce-pc>ul{
+    width: 500%;
+}
+div.design-produce-pc>ul:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+div.design-produce-pc>ul>li{
+    float:left;
+    width:20%;
+}
+div.design-text {
+    width: 50%;
+    float:left;
+    height: 500px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/*---------------AMG性能设计媒体查询---------------*/
+@media screen and (min-width:768px){
+    div.design-text{
+        width: 50%;
+    }
+    div.design-img{
+        width: 50%;
+    }
+    img.design-li-phone{
+        display:none;
+    }
+}
+@media screen and (max-width:767px) {
+    div.design-text{
+        width: 100%;
+    }
+    div.design-img{
+        width: 100%;
+    }
+    ul.design-title-pc{
+        width: 90%;
+        margin:15px auto;
+    }
+    div.design-produce-pc{
+        width: 90%;
+        margin:15px auto;
+    }
+    img.design-li-pc{
+        display:none;
+    }
+}
+/*----------------------------------------------------------------*/
+.main-content{
+    width: 80%;
+    margin:0 auto;
+    margin-top:10px;
+}
+.main-text a{
+    color:#333;
+    font-size:14px;
+    margin-top:10px;
+    display: inline-block;
+}
+li.main-border{
+    position:relative;
+}
+ li.main-border a{
+    color: #c00;
+}
+li.main-border a:before{
+    content:"";
+    width: 4px;
+    height: 16px;
+    background-color: #c00;
+    display: block;
+    transform: rotate(45deg) skew(30deg);
+    position:absolute;
+    top:10px;
+    left:-10px;
+    z-index:22;
+}
+.about-text{
+    width: 80%;
+    margin:0 auto;
+}
+.about-text1{
+    color: #333;
+    font: normal 400 28px/1 "SimSun",serif;
+    transform: scale(0.8);
+    transform-origin:left;
+    text-align: left;
+}
+.about-text2{
+    color:#333;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top:30px;
+}
+.about-phone{
+    display: none;
+}
+.main-phone-text>a:hover{
+    color:#c00;
+}
+/*AMG故事------------------------------------------------*/
+.section-story{
+    position:relative;
+    color:#fff;
+}
+.story-img:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.section-story .img-pc{
+    width: 100%;
+    float:left;
+}
+.story-content>p {
+    line-height:30px;
+}
+@media (min-width: 768px) {
+    .story-text {
+        width: 80%;
+        position:absolute;
+       top:50%;
+      left:50%;
+       transform:translate(-50%,-50%); 
+    }
+    .img-phone{
+        display: none;
+    }
+    .story-content{
+    width: 50%;
+    text-align:left;
+    margin-left:50%;
+   }
+   .story-text h3 {
+    font:normal 400 36px/1.89 "SimSun",serif;
+    margin-bottom:20px;
+   }
+}
+@media screen and (max-width: 767px){
+    .story-content{
+        text-align: center;
+    }
+    .story-content>h3{
+        font-size:20px;
+        transform: scaleX(0.7);
+        margin-bottom:20px;
+    }
+    .img-phone{
+        width: 100%;
+    }
+    .img-pc{
+        display: none;  
+    }
+    .story-text{
+        padding:30px;
+    }
+}
+/*AMG工程技术------------------------------------------------------------------*/
+.section-project{
+    color:#fff;
+    position:relative;
+}
+.project-img:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.section-project .project-pc{
+    width: 100%;
+    float:left;
+}
+.project-content>p {
+    line-height:30px;
+}
+@media screen and (min-width: 768px){
+    .project-phone{
+        display:none;
+    }
+    .project-text {
+        width: 80%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .project-content{
+    width: 50%;
+    text-align:left;
+    /*margin-left:50%;*/
+   }
+   .project-content>h3 {
+    font: normal 400 36px/1.89 "SimSun",serif;
+    margin-bottom: 20px;
+   }
+}
+@media screen and (max-width: 767px){
+    .project-content{
+        text-align: center;
+    }
+    .project-phone{
+        width: 100%;
+    }
+    .project-content>h3{
+        font-size:20px;
+        transform: scaleX(0.7);
+        margin-bottom:20px;
+    }
+    .project-pc{
+        display: none;  
+    }
+    .project-text{
+        padding:30px;
+    }
+}

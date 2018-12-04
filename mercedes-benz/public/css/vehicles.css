@@ -1,0 +1,224 @@
+/**768px以下不显示**/
+@media screen and (max-width: 768px) {
+    /**所有车型板块容器**/
+    .allModel{
+        display:none;
+    }
+}
+/**768px以上**/
+@media screen and (min-width: 768px){
+    .allModel{
+        display:-webkit-flex;
+        display: flex;
+        -webkit-flex-direction:row;
+        flex-direction:row;
+        align-content: flex-start;
+    }
+    .click{
+        width:30px;
+        height:150px;
+        margin-top:122px;
+        cursor: pointer;
+        position: relative;
+    }
+    .click-left,.click-right{
+        position: absolute;
+        top:69px;
+        left:9px;
+        width:12px;
+        height:12px;
+    }
+    .click-left-inside{
+        background-image: url(../img/click/click-left.png);
+        background-repeat: no-repeat;
+    }
+    .click-right-inside{
+        background-image: url(../img/click/click-right.png);
+        background-repeat: no-repeat;
+    }
+    .flex{
+        display:-webkit-flex;
+        display: flex;
+        -webkit-flex-direction:column;
+        flex-direction:column;
+        align-content: flex-start;
+    }
+    .title{
+        font:normal 400 36px "SimSun",serif;
+        height: 50px;
+        line-height: 50px;
+        color: #333;
+    }
+    .li_active{
+        border-bottom: 3px solid #00ADEF;
+    }
+    .car_nav{
+        display:-webkit-flex;
+        display: flex;
+        height:72px;
+        font:normal 400 21px "SimSun",serif;
+        color: #666;
+    }
+    .car_nav>li{
+        height:25px;
+        margin-right: 50px;
+        margin-top:21px;
+        cursor:pointer;
+    }
+    .car_body{
+        overflow: hidden;
+    }
+    
+    .car_body>ul>li{
+        float:left;
+        width:224px;
+        margin-left:11px;
+    }
+    .getModelbox{
+        width:1792px;
+        height:317px;
+    }
+    .title_Model{
+        font: normal 400 36px/1 "SimSun",serif;
+        margin-right:7px;
+    }
+    .font_Model{
+        color:#666;
+    }
+    .getModelbox>li>.img_title{
+        width:224px;
+        height:87px;
+    }
+    .box_carTitle{
+        position:relative;
+    }
+    .box_carTitle>li:nth-child(1)::before{
+        position: absolute;
+        width: 21px;
+        top:-20px;
+        left: 2px;
+        height: 2px;
+        display: block;
+        content: '';
+        background: #666;
+    }
+    .box_carTitle>li:nth-child(1){
+        margin-top:32px;
+    }
+    .box_carTitle>li>a>p{
+        margin-bottom:-7px;
+    }
+    .box_carTitle>li{
+        margin-bottom:34px;
+    }
+    /**改变颜色**/
+    .change_blue{
+        color:#00adef;
+    }
+    .box_carTitle>li>a:not(:hover){
+        font-size: 12px;
+        font-weight: normal;
+        color: #666;
+    }
+    .box_carTitle>li>a{
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .box_carTitle>li>a>p:nth-child(1){
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+    .box_carTitle>li>a>p:nth-child(1):not(:hover){
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #333;
+    }
+    .solid{
+        border-top:1px solid #CCCCCC;
+        width:98%;
+        margin:30px auto;
+    }
+    .nav_container{
+        display:-webkit-flex;
+        display:flex;
+    }
+    .nav_container>li>a{
+        color:#666;
+        font:100%;
+        font-weight: 600;
+    }
+    .nav_container>li{
+        font-size:17px;
+    }
+    .nav_container>li>a:hover{
+        color:#00adef;
+    }
+    .nav_container>li:nth-child(1),.nav_container>li:nth-child(2){
+        border-right:1px solid #CCCCCC;
+    }
+}
+/**768px到980px之间**/
+@media screen and (min-width: 768px) and (max-width:980px){
+    .allModel{
+        width:100%;
+        margin:0 auto;
+    }
+    .flex{
+        min-width:708px;
+        max-width:920px;
+    }
+    .nav_container>li{
+        margin-top:20px;
+        margin-right:26px;
+        padding-right:26px;
+    }
+}
+/**980以上**/
+@media screen and (min-width: 980px){
+    .allModel{
+        margin:0 auto;
+        max-width:1000px;
+    }
+    .flex{
+        max-width:940px;
+        min-width:920px;
+    }
+    .flex_item{
+        width:940px;
+    }
+    .nav_container>li{
+        margin-top:25px;
+        margin-right:53px;
+        padding-right:53px;
+    }
+}
+/**临时区分用**/
+/**.flex{
+    border:1px solid green;
+}
+.flex_item{
+    border:1px solid yellow;
+}**/
+/**公用样式**/
+
+body{
+    margin:0;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.car-hover:hover{
+    cursor:pointer;
+    color: #CCCCCC 
+}
+.car-hover>p{
+    margin:10px 0;
+    font-size:15px;
+}

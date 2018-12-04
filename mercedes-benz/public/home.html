@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/vehicles.css">
+</head>
+<hander>
+            
+    <!--hander-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg row ">
+        <a href="home.html" class="navbar-brand "><img src="img/benz/benz-logo.png" class="homo-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse mt-4" id="main"  >
+            <ul class=" navbar-nav">
+                <li class="nav-item ml-3">
+                    <a class="nav-link" style="cursor: pointer">车型</a>
+                    <ul class="drop-down-content drop-one">
+                        <li class="drop-down-content2">
+                            <div class="mycontainer" style="margin-top:0px">
+                                <h4>
+                                        <body onload="carModelTitle('轿车')">
+                                                <!-- 容器 -->
+                                                <div class="allModel">
+                                                    <!-- 左边按钮 -->
+                                                    <!--<div class="click" id="click-left">
+                                                        <div class="click-left click-left-inside">
+                                                        </div>
+                                                    </div>-->
+                                                    <!-- 中间内容 -->
+                                                    <div class="flex">
+                                                        <div class="title flex_item">所有车型</div>
+                                                        <ul class="small_title flex_item car_nav">
+                                                            <li class="li_active">轿车</li>
+                                                            <li>SUV</li>
+                                                            <li>轿跑车 &amp; 敞篷跑车</li>
+                                                            <li>MPV</li>
+                                                        </ul>
+                                                        <div class="flex_item car_body">
+                                                           <ul id='getModel' class='getModelbox'>
+                                                           </ul>
+                                                        </div>
+                                                        <!--分割线，导航-->
+                                                    </div>
+                                                    <!-- 右边按钮 -->
+                                                    <!--<div class="click" id="click-right">
+                                                        <div class="click-right click-right-inside">
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                            </body> 
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item ml-3">
+                    <a class="nav-link"  style="cursor: pointer" href="car.html">购车指南</a>
+                </li>
+
+                <li class="nav-item ml-3">
+                    <a class="nav-link"  style="cursor: pointer" href="muban.html">车辆预约</a>
+              
+                </li>
+
+                <li class="nav-item ml-3"><a class="nav-link" style="cursor: pointer" href="julebu.html">俱乐部</a>
+
+                </li>
+
+                <li class="nav-item ml-3"><a class="nav-link" style="cursor: pointer" href="mypro.html">梅赛德斯-AMG</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="lunbo"></div>
+</hander>
+<body>
+<!--轮播-->
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- 指示符 -->
+    <ul class="carousel-indicators" >
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="lun-text">
+                <div class="lun-text2">
+                    <h4>全新G级越野车</h4>
+                    <h1>任时光荏苒 唯传奇永恒</h1>
+                    <div>____</div>
+                    <br/>
+                    <h6>豪华感与力量感的合二为一，个性与野性的双重体验</h6>
+                    <a href="#">了解更多</a>
+                </div>
+                <img src="img/lun/1.jpg" class="w-100 lun-text3"/>
+                <img src="img/lun/1g.jpg" class="w-100 lun-text4"/>
+                <div class="lun-text5">
+                    <h4>全新G级越野车</h4>
+                    <h1>任时光荏苒 唯传奇永恒</h1>
+                    <div>____</div>
+                    <br/>
+                    <h6>豪华感与力量感的合二为一，个性与野性的双重体验</h6>
+                    <a href="#" class="btn btn-primary">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="lun-text2">
+                <h4>全新CLS四门轿跑车</h4>
+                <h1>夺目  先锋</h1>
+                <div>____</div>
+                <br/>
+                <h6>感性，纯粹的设计语言一目了然，夺目超凡，无需多言</h6>
+                <a href="#">了解更多</a>
+            </div>
+
+            <img src="img/lun/2.jpg" class="w-100 lun-text3"/>
+            <img src="img/lun/2g.jpg" class="w-100 lun-text4"/>
+
+            <div class="lun-text5">
+                <h4>全新CLS四门轿跑车</h4>
+                <h1>夺目  先锋</h1>
+                <div>____</div>
+                <br/>
+                <h6>感性，纯粹的设计语言一目了然，夺目超凡，无需多言</h6>
+                <a href="#" class="btn btn-primary">了解更多</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="lun-text2">
+                <h4>全新G级越野车</h4>
+                <h1>任时光荏苒 唯传奇永恒</h1>
+                <div>____</div>
+                <br/>
+                <h6>豪华感与力量感的合二为一，个性与野性的双重体验</h6>
+                <a href="#">了解更多</a>
+            </div>
+            <img src="img/lun/3.jpg" class="w-100 lun-text3"/>
+            <img src="img/lun/3g.jpg" class="w-100 lun-text4"/>
+            <div class="lun-text5">
+                <h4>全新G级越野车</h4>
+                <h1>任时光荏苒 唯传奇永恒</h1>
+                <div>____</div>
+                <br/>
+                <h6>豪华感与力量感的合二为一，个性与野性的双重体验</h6>
+                <a href="#" class="btn btn-primary">了解更多</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="mycontainer">
+        <div>
+            <h2>全部车型</h2>
+        </div>
+        <div class="all-car">
+            <picture>
+                <img src="img/benz/d-mb-homepage-all-vehicles-bg-img.jpg" class="lun-text3"/>
+                <img src="img/benz/bg1.png"class="lun-text4" >
+            </picture>
+            <ul>
+               <a href="muban.html" style="color:black"><li><div>轿车</div></li></a>
+                <li><div>SUV</div></li>
+                <li><div>轿跑车</div></li>
+                <li><div>MPV</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mycontainer">
+            <h2>发现更多</h2>
+            <div class="all-car2 home-li3">
+                <picture>
+                    <img src="img/benz/d-mb-homepage-large-special-offer-pc-new.jpg" class="lun-text3"/>
+                    <img src="img/benz/d-mb-homepage-large-special-offer-m.jpg" class="lun-text4">
+                </picture>
+                <ul>
+                    <li>
+                        <div >限时购车新方案</div>
+                        <div class="find-more">
+                            <br/>
+                            多种优惠方案，<h6>助你轻松拥有一辆梅赛德斯奔驰</h6>
+                            <br/>
+                            <h6>> 了解更多</h6>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="all-car2 home-li2" style="width: 66%; margin-right: 11px;">
+                <picture> <img src="img/benz/Homepage%20-shes-pc.jpg" alt=""/></picture>
+                <ul>
+                    <li>
+                        <div >加入She's Mercedes</div>
+                        <div class="find-more">
+                            <br/>
+                            发出你的声音，唤醒女性力量 <h6></h6>
+                            <br/>
+                            <h6>> 了解更多</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="all-car2 home-li" style="width: 33%;">
+                <picture> <img src="img/benz/星友荟.jpg" alt=""/></picture>
+                <div class="clearfix"></div>
+                <ul>
+                    <li >
+                        <div >星友荟</div>
+                        <div class="find-more">
+                            <br/>
+                            尽情表达自我、分享观点、结识新<h6>友的星徽社群</h6>
+                            <br/>
+                            <h6>> 了解更多</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="fenge"></div>
+    <div class="all-car2">
+        <picture>
+            <img src="img/benz/E-Class-Coupe.jpg" class="lun-text3"/>
+            <img src="img/benz/m-mb-homepage-test-drive-banner@2x.jpg" class="lun-text4"/>
+        </picture>
+        <div class="all-car2-div">
+            <div>
+                    <h3> 预约试驾</h3>
+                    <h6>亲身体验梅赛德斯-奔驰吧</h6>
+                    <a href="shenqin.html"> > 开始</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>0
+    <div class="fenge"></div>
+
+
+    <div class="mycontainer-foot">
+        <div class="mycontainer">
+            <div class="footer">
+                <nav class="navbar navbar-dark  navbar-expand-lg row ">
+                    <div class="foot-div">
+                        <a class="navbar-toggler" data-toggle="collapse" data-target="#main1" style="font-size: 20px">
+                            <span class="my-foot-span">车型</span>
+                    </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main1"  >
+                        <ul class=" navbar-nav foot-li2">
+                            <li class="nav-item "><a class="nav-link">轿车</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">SUV</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">轿跑车和敞篷跑车</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">MPV</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">EQC</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">车型总览</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="foot-li1">
+                    <li>车型</li>
+                    <a href="#"><li>轿车</li></a>
+                    <a href="#"><li>SUV</li></a>
+                    <a href="#"><li>轿跑车和敞篷跑车</li></a>
+                    <a href="#"><li>MPV</li></a>
+                    <a href="#"><li>EQC</li></a>
+                    <a href="#"><li>车型总览</li></a>
+                </ul>
+
+                <nav class="navbar navbar-dark  navbar-expand-lg row ">
+                    <div class="foot-div">
+                        <a class="navbar-toggler" data-toggle="collapse" data-target="#main2" style="font-size: 20px">
+                            <span class="my-foot-span">购车指南</span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main2"  >
+                        <ul class=" navbar-nav foot-li2">
+                            <li class="nav-item "><a class="nav-link">查询库存预定</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">限时购车新方案</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">查找经销商</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">金融计算器</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">预约试驾</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">下载产品手册</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="foot-li1">
+                    <li>购车指南</li>
+                    <a href="#"><li>查询库存预定</li></a>
+                    <a href="#"><li>限时购车新方案</li></a>
+                    <a href="#"><li>查找经销商</li></a>
+                    <a href="#"><li>金融计算器</li></a>
+                    <a href="#"><li>预约试驾</li></a>
+                    <a href="#"><li>下载产品手册</li></a>
+                </ul>
+
+                <nav class="navbar navbar-dark  navbar-expand-lg row ">
+                    <div class="foot-div">
+                        <a class="navbar-toggler" data-toggle="collapse" data-target="#main3" style="font-size: 20px">
+                            <span class="my-foot-span">客户服务</span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main3"  >
+                        <ul class=" navbar-nav foot-li2">
+                            <li class="nav-item "><a class="nav-link">星徽保养菜单</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">原厂修养套餐家族</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">手机端服务体验</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">原厂配件</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">事故与保险服务</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">24小时道路救援</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">召回通知</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="foot-li1">
+                    <li>客户服务</li>
+                    <a href="#"><li>星徽保养菜单</li></a>
+                    <a href="#"><li>原厂修养套餐家族</li></a>
+                    <a href="#"><li>手机端服务体验</li></a>
+                    <a href="#"><li>原厂配件</li></a>
+                    <a href="#"><li>事故与保险服务</li></a>
+                    <a href="#"><li>24小时道路救援</li></a>
+                    <a href="#"><li>召回通知</li></a>
+                </ul>
+
+                <nav class="navbar navbar-dark  navbar-expand-lg row ">
+                    <div class="foot-div">
+                        <a class="navbar-toggler" data-toggle="collapse" data-target="#main4" style="font-size: 20px">
+                            <span class="my-foot-span">奔驰天下</span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main4"  >
+                        <ul class=" navbar-nav foot-li2">
+                            <li class="nav-item "><a class="nav-link">Mercedes</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">品牌介绍</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">奔驰新闻</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">企业社会责任</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">奔驰驾驶学院</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">供应商信息平台</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">环保信息清单</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">奔驰杂志</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link">星友荟</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="foot-li1">
+                    <li>奔驰天下</li>
+                    <a href="#"><li>Mercedes me</li></a>
+                    <a href="#"><li>品牌介绍</li></a>
+                    <a href="#"><li>奔驰新闻</li></a>
+                    <a href="#"><li>企业社会责任</li></a>
+                    <a href="#"><li>奔驰驾驶学院</li></a>
+                    <a href="#"><li>供应商信息平台</li></a>
+                    <a href="#"><li>环保信息清单</li></a>
+                    <a href="#"><li>奔驰杂志</li></a>
+                    <a href="#"><li>星友荟</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mycontainer-foot">
+        <div class="mycontainer">
+            <div class="footer2">
+                <h4>其他奔驰网站</h4>
+                <ul>
+                    <a href="#"><li>Mercedes me</li></a>
+                </ul>
+                <ul>
+                    <a href="#"><li>星睿认证二手车</li></a>
+                </ul>
+                <ul>
+                    <a href="#"><li>She's Mercedes</li></a>
+                </ul>
+                <ul>
+                    <a href="#"><li>金融服务</li></a>
+                </ul>
+                <ul>
+                    <a href="#"><li>奔驰电商平台</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="mycontainer-foot">
+        <div class="mycontainer">
+                <h4>关注我们</h4>
+            <div class="footer3">
+                <ul>
+                   <li><a href="#"><img src="img/benz/wechat_mouse_over.png" alt=""/></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/benz/sina_mouse_over.png" alt=""/></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/benz/zhihu_mouse_over.png"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+     <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/vehicles.js"></script>
+    <script >
+    
+        $("a.nav-link").on("click",function(){
+            var $btn=$(this);
+            var $o=$btn.next();
+            var $ro=$btn.parent().next().children(1);
+            var $lo=$btn.parent().prev().children(1);
+            var $ro2=$btn.parent().next().next().children(1);
+            var $lo2=$btn.parent().prev().prev().children(1);
+            var $a=parseInt($("nav").width());
+            if($a>992){
+            if($o.is(":hidden"))
+            {   $o.addClass("listshow")//.css("display","block")
+                $ro.removeClass("listshow")
+                $lo.removeClass("listshow")
+                $ro2.removeClass("listshow")
+                $lo2.removeClass("listshow")
+            }
+            else
+            {
+                $o.removeClass("listshow")//.css("display","none")
+
+            }
+            }
+        })
+
+        function getcarid(cid){
+            cid=cid-1;
+            console.log(cid)
+            var vv=document.getElementById("getModel").childNodes;
+            if(cid<=5){
+                vv[0].childNodes[1].src=ii[cid]
+            }
+            else if(cid<=10){
+                vv[1].childNodes[1].src=ii[cid]
+            }
+            else if(cid<=13){
+                
+                vv[2].childNodes[1].src=ii[cid]
+            }
+            else{
+                vv[3].childNodes[1].src=ii[cid]
+           }
+         }
+    </script>
+</body>
+
+<!--footer-->
+<footer>
+        <ul class="footer-ul">
+            <li>©2018 北京梅赛德斯-奔驰销售服务有限公司 版权所有</li>
+            <li>网站地址</li>
+            <li>京ICP备09046804号-2</li>
+            <li>隐私条款</li>
+            <li>法律声明</li>
+            <li>京公网安备11010502035702号</li>
+        </ul>
+        <ul class="footer-ul2">
+            <li>©2018 北京梅赛德斯-奔驰销售服务有限公司 版权所有</li>
+                <li>网站地址</li>
+                <li>京ICP备09046804号-2</li>
+            <ul>
+                <li>隐私条款</li>
+                <li>法律声明</li>
+                <li>京公网安备11010502035702号</li>
+            </ul>
+        </ul>
+        <ul class="footer-ul3">
+                <li>©2018 北京梅赛德斯-奔驰销售服务有限公司 版权所有</li>
+            <ul>
+                <li>网站地址</li>
+                <li>京ICP备09046804号-2</li>
+                <li>隐私条款</li>
+            </ul>
+            <ul>
+                <li>法律声明</li>
+                <li>京公网安备11010502035702号</li>
+            </ul>
+        </ul>
+</footer>
+
+</html>

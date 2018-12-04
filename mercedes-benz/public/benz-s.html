@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/benz-s.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/vehicles.css">
+    <link rel="stylesheet" href="css/my-base.css">
+    <link rel="stylesheet" href="css/special-offer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/3deye.min.js"></script>
+    <style>
+        .drop-one{
+            position:relative;
+            top:80px !important;
+        }
+    </style>
+</head>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg row ">
+        <a href="home.html" class="navbar-brand "><img src="img/benz/benz-logo.png" class="homo-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse mt-4" id="main"  >
+            <ul class=" navbar-nav">
+                <li class="nav-item ml-3">
+                    <a class="nav-link" style="cursor: pointer">车型</a>
+                    <ul class="drop-down-content drop-one">
+                        <li class="drop-down-content2">
+                            <div class="mycontainer">
+                                <h4>
+                                        <body onload="carModelTitle('轿车')">
+                                                <!-- 容器 -->
+                                                <div class="allModel">
+                                                    <!-- 左边按钮 -->
+                                                    <!--<div class="click" id="click-left">
+                                                        <div class="click-left click-left-inside">
+                                                        </div>
+                                                    </div>-->
+                                                    <!-- 中间内容 -->
+                                                    <div class="flex">
+                                                        <div class="title flex_item">所有车型</div>
+                                                        <ul class="small_title flex_item car_nav">
+                                                            <li class="li_active">轿车</li>
+                                                            <li>SUV</li>
+                                                            <li>轿跑车 &amp; 敞篷跑车</li>
+                                                            <li>MPV</li>
+                                                        </ul>
+                                                        <div class="flex_item car_body">
+                                                           <ul id='getModel' class='getModelbox'>
+                                                           </ul>
+                                                        </div>
+                                                        <!--分割线，导航-->
+                                                    </div>
+                                                    <!-- 右边按钮 -->
+                                                    <!--<div class="click" id="click-right">
+                                                        <div class="click-right click-right-inside">
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                            </body> 
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item ml-3">
+                    <a class="nav-link"  style="cursor: pointer" href="car.html">购车指南</a>
+                   
+                </li>
+
+                <li class="nav-item ml-3">
+                    <a class="nav-link"  style="cursor: pointer" href="muban.html">车辆预约</a>
+   
+                </li>
+
+                <li class="nav-item ml-3"><a class="nav-link" style="cursor: pointer" href="julebu.html">俱乐部</a>
+
+                </li>
+
+                <li class="nav-item ml-3"><a class="nav-link" style="cursor: pointer" href="mypro.html">梅赛德斯-AMG</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+<body>
+    <div>
+        <!--最上面的图片和文字-->
+        <div class="top">
+            <img src="img/KV-PC.jpg">
+        </div>
+        <div class="top-nav">
+            <ul>
+                <li class="top-nav-left">
+                    <div>
+                        *厂商建议零售价
+                        <span><b>¥ 140.88 万</b></span>
+                        起
+                    </div>
+                    <div>
+                        /月供
+                        <span><b>¥ 6,932起</b></span>
+                    </div>
+                </li>
+                <li class="top-nav-right">
+                    <a href="#" class="pay" id="pay1">购买工具</a>
+                    <div class="mylist" id="mylist1">
+                        <div><a href="">购买工具</a></div>
+                        <div><a href="">金融计算器</a></div>
+                        <div><a href="">车型配置</a></div>
+                        <div><a href="">预约试驾</a></div>
+                        <div><a href="">下载产品手册</a></div>
+                        <div><a href="">查找经销商</a></div>
+                    </div>
+                    <a href="#" class="yuyue">预约试驾</a>
+                    <a href="#" class="yuding">即刻在线预定</a>
+                </li>
+            </ul>
+        </div>
+        <!--第二部分-->
+        <div class="section-header">
+            <h3>礼，体也。言得事之体也</h3>
+            <div class="section-header_detail">君子之礼，自观于貌，自察于行。梅赛德斯-迈巴赫S级轿车，尽释无上尊礼之设计。周全礼道，气当自华。</div>
+                               <div style="max-width:1250px;margin:auto">
+            <div id="myCar"></div>
+            <div class="myCar2">
+                <div onclick="add()" class="bling"><img src="images/bling1.png" style="width:8%;"></div>
+                <span onclick="black()" class="black">_____</span>
+                <span onclick="red()" class="red">_____</span>
+                <span onclick="blue()" class="blue">_____</span>
+                <span onclick="withe()" class="withe">_____</span>
+            </div>
+            <div class="neishi">
+                <div onclick="nei1()"><img src="images/nei1.png" style="width:100%;"></div>
+                <div onclick="nei2()"><img src="images/nei2.png" style="width:100%;"></div>
+                <div onclick="neib()"><b>夜灯展示</b></div>
+            </div>
+            </div>
+        </div>
+        <div class="section-header">
+            <div class="mytop">
+                <img src="img/feature_2_pc.jpg" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="section-tab">
+            <table>
+                <tr>
+                    <td>
+                        <div class="section-tab-text">
+                            <p>9速自动变速箱，享顺畅之礼</p>
+                            9速自动变速箱（9G-TRONIC）具有9个前进档，将效率、舒适性和动态性提升至全新水平，更快、更平顺的换档操作令其魅力十足。在保持出众性能的同时提高了驾乘舒适性，且降低了噪声级与油耗。
+                        </div>
+                    </td>
+                    <td><img src="img/feature2-2.jpg" alt="" class="myimg"></td>
+                </tr>
+                <tr>
+                    <td><div style="height:30px;"></div></td>
+                </tr>
+                <tr>
+                    <td><img src="img/SSPIP15574.jpg" alt="" class="myimg"></td>
+                    <td>
+                        <div class="section-tab-text">
+                            <p>V12双涡轮发动机，享澎湃之礼</p>
+                            令人惊叹的发动机设计，带来无限澎湃动力。呈60度夹角排列的12个气缸确保了平稳的运行特性。压铸镁材质的气缸盖罩，重量更轻。高品质合金可以保护发动机免受腐蚀，并赋予组件极强的耐热性。
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--重复2-->
+        <div class="section-header">
+            <h3>唯境界之礼，君子能慎其独也</h3>
+            <div class="section-header_detail">礼道之盛，不言而喻，梅赛德斯-迈巴赫S级轿车，匠心独具，为极致礼仪而生。</div>
+            <div>
+                <img src="img/14404.jpg" alt="">
+            </div>
+        </div>
+        <div class="section-tab">
+            <table>
+                <tr>
+                    <td><img src="img/4602.jpg" alt="" class="myimg"></td>
+                    <td>
+                        <div class="section-tab-text">
+                            <p>车内空气调节组件(AIR BALANCE)，享芳香之礼</p>
+                            车辆内部可通过车内空气调节组件(AIR BALANCE)，根据个人喜好营造芳香四溢的怡人氛围。该组件提供有6种优质车内香氛，可根据个人喜好进行选择，香氛的浓度和持续时间可调。另外，负离子发生器和经过优化的进气和循环空气滤清器还可以改善空气质量。
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div style="height:30px;"></div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-tab-text">
+                            <p>designo尊贵版诗米安（半苯胺）皮革内饰，享精致之礼</p>
+                            采用独特菱形设计、带装饰纽扣和布达佩斯滚边的精致designo诗米安（半苯胺）皮饰座椅，呈现绰绝品质和精湛技艺之感。仪表板中央部分和中央扶手均采用源自座椅的菱形绗缝图案，彰显和谐一致的外观。精雅内饰营造出豪华氛围，更带来愉悦的感官享受。
+                        </div>
+                    </td>
+                    <td><img src="img/4603.jpg" alt="" class="myimg"></td>
+                </tr>
+            </table>
+        </div>
+	</div>
+        <!--图片与视频-->
+        <div class="mycontainer1">
+            <div class="section-header">
+                <h4>图片与视频</h4>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#one">全部</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#two">外观</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#three">内饰</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="one">
+                    <div class="row">
+                        <div class="col-12" id="myhover"><img src="img/gallery1.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery2-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery1-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery3-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery4-pc.jpg" alt=""><div id="myhover1"></div></div>
+                    </div>
+                    <div id="more" class="collapse">
+                        <div class="row">
+                            <div class="col-6"><img src="img/gallery5-pc.jpg" alt=""><div id="myhover1"></div></div>
+                            <div class="col-6"><img src="img/gallery6-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        </div>
+                    </div>
+                   <button class="btn" data-toggle="collapse" data-target="#more" id="mymore">显示更多</button>
+                </div>
+                <div class="tab-pane" id="two">
+                    <div class="row">
+                        <div class="col-12"><img src="img/gallery1.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery3-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery4-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery2-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery1-pc.jpg" alt=""><div id="myhover1"></div></div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="three">
+                    <div class="row">
+                        <div class="col-6"><img src="img/gallery5-pc.jpg" alt=""><div id="myhover1"></div></div>
+                        <div class="col-6"><img src="img/gallery6-pc.jpg" alt=""><div id="myhover1"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="mydownload">
+                <div class="bgimg">
+                    <img src="img/gallery1.jpg">
+                    <a href="img/gallery1.jpg" download>下载图片</a>
+                    <div><a id="myclose">x</a></div>
+                </div>
+            </div>
+        </div>
+<div class="my-main pt-5" id="last-msg">
+            <hr>
+            <p>*以上方案有效期至2018年9月30日。</p>
+            <p>*本网站网页内所有相关价格及信息基于厂商建议零售价格，仅适用于购买奔驰金融公司金融产品，并与经销商达成一致的客户。</p>
+            <p>*本网站网页内所有厂商建议零售价格和产品信息仅供参考。奔驰金融公司金融产品的具体价格及细节以客户与授权经销商协商一致的最终零售价格为准。具体的零售交易价格、产品配置及金融产品相关信息请与授权经销商确定。</p>
+            <p>*本页面仅展示厂商向授权经销商公布的相关销售政策。具体适用车型、适用客户、适用期限及适用条件等请与当地授权经销商咨询确定。</p>
+            <p>“先享后选”方案暂不适用于乌鲁木齐、宝鸡、曲靖、龙岩、南阳、大庆、延边、盘锦、营口、锦州、长治、鞍山、丽水、衢州、金华、阜阳、蚌埠等城市及地区（详细金融产品提供情况敬请咨询当地授权经销商）。</p>
+            <p>“先享后选”中新车的期末车辆保值金额取决于此方案的相关参数；且月付以每年20,000公里行驶里程计算。
+                *更多详情，敬请咨询梅赛德斯-奔驰授权经销商，或致电400-818-1188。  </p>
+        </div>
+   
+    </div>
+                <script type="text/javascript">
+                var myimg=0;
+                xuanzhuan();
+            function xuanzhuan(){
+            $(document).ready(function(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/car1/",
+                    totalImages:32,
+                    imageExtension:"jpg"
+                });
+            });
+            }
+            function add(){
+                myimg++;
+                if(myimg==3){
+                    myimg=1;
+                }
+                if(myimg==1)
+                ok2();
+                else
+                ok();
+            }
+            function black(){
+                xuanzhuan();
+            }
+            function ok(){
+                $(document).ready(function(){
+                    $("#myCar").vc3dEye({
+                        imagePath:"images/car1/",
+                        totalImages:32,
+                        imageExtension:"jpg"
+                    });
+                });
+            }
+            function ok2(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/car2/",
+                    totalImages:32,
+                    imageExtension:"jpg"
+                });
+            }
+            function red(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/red/",
+                    totalImages:4,
+                    imageExtension:"jpg"
+                });
+            }
+            function withe(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/withe/",
+                    totalImages:4,
+                    imageExtension:"jpg"
+                });
+            }
+            function blue(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/blue/",
+                    totalImages:4,
+                    imageExtension:"jpg"
+                });
+            }
+            function nei1(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/nei1/",
+                    totalImages:6,
+                    imageExtension:"jpeg"
+                });
+            }
+            function nei2(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/nei2/",
+                    totalImages:6,
+                    imageExtension:"jpeg"
+                });
+            }
+            function neib(){
+                $("#myCar").vc3dEye({
+                    imagePath:"images/neib/",
+                    totalImages:6,
+                    imageExtension:"jpeg"
+                });
+            }
+
+
+            $("a.nav-link").on("click",function(){
+            var $btn=$(this);
+            var $o=$btn.next();
+            var $ro=$btn.parent().next().children(1);
+            var $lo=$btn.parent().prev().children(1);
+            var $ro2=$btn.parent().next().next().children(1);
+            var $lo2=$btn.parent().prev().prev().children(1);
+            var $a=parseInt($("nav").width());
+            if($a>992){
+            if($o.is(":hidden"))
+            {   $o.addClass("listshow")//.css("display","block")
+                $ro.removeClass("listshow")
+                $lo.removeClass("listshow")
+                $ro2.removeClass("listshow")
+                $lo2.removeClass("listshow")
+            }
+            else
+            {
+                $o.removeClass("listshow")//.css("display","none")
+
+            }
+            }
+        })
+
+        function getcarid(cid){
+            cid=cid-1;
+            console.log(cid)
+            var vv=document.getElementById("getModel").childNodes;
+            if(cid<=5){
+                vv[0].childNodes[1].src=ii[cid]
+            }
+            else if(cid<=10){
+                vv[1].childNodes[1].src=ii[cid]
+            }
+            else if(cid<=13){
+                
+                vv[2].childNodes[1].src=ii[cid]
+            }
+            else{
+                vv[3].childNodes[1].src=ii[cid]
+           }
+         }
+    </script>
+    <script src="js/benz-s.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/vehicles.js"></script>
+</body>
+</html>

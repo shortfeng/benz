@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/my-base.css">
+    <link rel="stylesheet" href="css/test-drive.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--网页头部-->
+    <header></header>
+    <!--网页主体-->
+    <div id="main" class="container">
+        <!--标题-->
+        <div id="my-title">
+            <div class="row mt-5">
+                <div class="col-4"></div>
+                <div class="col-4 text-center">
+                    <span class="text-muted my-title p-0 w-100 m-0">预约试驾</span>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-window">
+        <!--中间的表单和图片-->
+        <div class="mt-5 pt-5">
+            <div class="row">
+                <!--表单-->
+                <div class="col-lg-5 col-md-12 col-sm-12 pt-5  pl-5" id="my-form">
+                    <form action='tishi.html' class="pr-5 pl-5">
+                        <legend class="text-muted my-small">欢迎您在线申请预约试驾，请在下方填写您的联络信息。</legend>
+                        <input type="text" placeholder="姓名" maxlength="30" name="uname" class="my-input p-2 mt-3" id="d1"><br>
+                        <input type="radio" id="man" name="sex" checked class="mt-4 ml-3 "><label for="man" class="pl-2">先生</label>
+                        <input type="radio" id="woman" name="sex" class="mt-4 ml-5 justify-content-end"><label for="woman"  class="pl-2">女士</label><br>
+                        <input type="text" placeholder="您的手机号码" class="my-input p-2 mt-3" maxlength="11" name="phone" required id="d2"><br>
+                        <input type="email" placeholder="您的邮箱" class="my-input p-2 mt-3" name="phone" required  id="d3"><br>
+                        <input type="text" placeholder="请输入右侧验证码" class="my-input p-2 mt-3" maxlength="5" name="token" style="width: 74%;" required  id="d4"><img
+                            src="img/test-drive-recaptcha.png" style="width: 20%" class="p-0">
+                        <img src="img/test-drive-refresh.png"><br>
+                        <input type="checkbox" id="argee" class="mt-5" id="d6" onclick="gou()"><label for="argee">我仔细阅读了并接受所附的 <a href="#">隐私条款</a></label><br>
+                        <input type="submit" value="申请试驾" class="btn" id="d5" >
+                    </form>
+                   
+                </div>
+                <!--图片-->
+                <div class="col-lg-7 col-md-1 col-sm-1 pl-5" id="my-img">
+                    <img src="img/testdrivebg.jpg" class="w-100  pb-4" style="padding-left: 10em;">
+                </div>
+            </div>
+        </div>
+        <!--右下角分享-->
+        <div id="share">
+            <div class="row">
+                <div class="col-4 offset-8">
+                    <span class="my-large p-4">分享到</span>
+                    <span class="p-3">
+                        <a href="#">
+                            <img src="img/wechat.png"  style="width: 10%;">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <img src="img/sina.png" style="width: 10%;" >
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/test-drive.js"></script>
+
+
+
+
+    <!--网页底部-->
+    <footer></footer>
+</body>
+</html>
